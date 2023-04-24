@@ -1,0 +1,310 @@
+/* Table styling */
+
+table {
+  width: 90%; /* adjust the width to a value that works well for your content */
+  margin: 2rem auto; /* center the table horizontally */
+  background-color: #ddd;
+  border-color: #fff;
+}
+
+table th {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-color: #fff;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  height: 75px; /* adjust the height to a smaller value */
+  border-color: #fff;
+}
+
+table td p {
+  margin: 0;
+}
+
+table td ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+table td ul li {
+  margin-bottom: 1rem;
+}
+
+table td button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+table td button:hover {
+  background-color: #444;
+}
+
+/* Heading style */
+h1,h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(4, 4, 4, 0.712);
+}
+
+.addClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.addClass label {
+  width: 10px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+addClass input[type="text"]
+ {
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 40%;
+  height: 10px;
+}
+
+.addClass select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.addClass button {
+  background-color: rgba(17, 17, 17, 0.741);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  height:60px;
+}
+
+.addClass button:hover {
+  background-color: #444;
+}
+
+@media screen and (min-width: 768px) {
+  .addClass {
+    flex-direction: row;
+  }
+
+  .addClass label,
+  .addClass input,
+  .addClass select,
+  .addClass button {
+    margin-right: 1rem;
+  }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  background-color: rgb(198, 205, 208);
+  width: 20%;
+  padding:10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  height: 15%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: rgba(17, 17, 17, 0.784);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+button {
+  background-color: rgba(17, 17, 17, 0.862);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  
+}
+
+body {
+  background-color: rgb(255, 252, 252);
+}
+
+img{
+  height: 100px;
+  width:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.buttons-container {
+  margin-top: 10px;
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.736); /* black border */
+}
+
+.container {
+  border: 5px solid black;
+  padding: 1in;
+  margin: 1in;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container form {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #f9f9f9;
+}
+
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container button[type="submit"] {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-container button[type="submit"] {
+  background-color: #000000a4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #000000a4;
+}
+
+nav {
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 5px;
+}
+
+nav button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+}
+
+nav button:hover {
+  background-color: rgb(52, 52, 52);
+  color: rgb(255, 254, 254);
+  border-radius: 4px;
+}
+
+.navimage{
+  margin-left: 70%;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 100px;
+  margin-top: 55px;
+}
+
+.full{
+  color: red;
+  font-weight: bolder;
+}
