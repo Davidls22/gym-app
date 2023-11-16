@@ -10,7 +10,7 @@ const UpdatePassword = () => {
     e.preventDefault();
   
     try {
-      const { data } = await axios.post('http://localhost:8082/api/update-password', { email, currentPassword, newPassword });
+      const { data } = await axios.post('https://gymappbackend.onrender.com/api/update-password', { email, currentPassword, newPassword });
       alert(data.message);
     } catch (error) {
       console.error(error);
