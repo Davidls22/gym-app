@@ -11,7 +11,7 @@ const BookedClasses = () => {
         const userId = localStorage.getItem("userId");
 
         const response = await axios.get(
-          `http://localhost:8082/api/booked-classes/?user=${userId}`,
+          `https://gymappbackend.onrender.com/api/booked-classes/?user=${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -32,7 +32,7 @@ const BookedClasses = () => {
   const handleCancel = async (classId) => {
     console.log("classId:", classId); // Add this line
     try {
-      await axios.delete(`http://localhost:8082/api/booked-classes/${classId}`);
+      await axios.delete(`https://gymappbackend.onrender.com/api/booked-classes/${classId}`);
       alert("class cancelled");
       const newBookedClasses = bookedClasses.filter(
         (bookedClass) => bookedClass._id !== classId
