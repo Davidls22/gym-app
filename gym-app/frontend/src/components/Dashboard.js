@@ -32,7 +32,7 @@ const Dashboard = () => {
       let res;
       if (isEdit) {
         res = await axios.put(
-          `http://localhost:8082/api/classes/${editingClassId}`,
+          `https://gymappbackend.onrender.com/api/classes/${editingClassId}`,
           formData
         );
         setClasses(
@@ -41,7 +41,7 @@ const Dashboard = () => {
           )
         );
       } else {
-        res = await axios.post("http://localhost:8082/api/classes/", formData);
+        res = await axios.post("https://gymappbackend.onrender.com/api/classes/", formData);
         setClasses([...classes, res.data]);
       }
       setFormData({
@@ -59,7 +59,7 @@ const Dashboard = () => {
 
   const onDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8082/api/classes/${id}`);
+      await axios.delete(`https://gymappbackend.onrender.com/api/classes/${id}`);
       setClasses(classes.filter((cls) => cls._id !== id));
     } catch (error) {
       console.error(error.message);
@@ -82,7 +82,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:8082/api/classes");
+        const res = await axios.get("https://gymappbackend.onrender.com/api/classes");
         setClasses(res.data);
       } catch (error) {
         console.error(error.message);
