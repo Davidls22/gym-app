@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ca2b1c04.css",
+    "main.js": "/static/js/main.c6a6720f.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/dumbbell.png": "/static/media/dumbbell.a5f40f111919a2ba4102.png",
+    "static/media/GymLogo.jpg": "/static/media/GymLogo.0dc44046d6d8eb41ebb3.jpg",
+    "index.html": "/index.html",
+    "main.ca2b1c04.css.map": "/static/css/main.ca2b1c04.css.map",
+    "main.c6a6720f.js.map": "/static/js/main.c6a6720f.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca2b1c04.css",
+    "static/js/main.c6a6720f.js"
+  ]
+}
