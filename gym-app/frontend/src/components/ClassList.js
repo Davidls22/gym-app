@@ -11,7 +11,7 @@ const ClassList = () => {
   useEffect(() => {
     const fetchClasses = async () => {
       try {
-        const response = await axios.get("http://localhost:8082/api/classes/");
+        const response = await axios.get("https://gymappbackend.onrender.com/api/classes/");
         setClasses(response.data);
       } catch (error) {
         console.error(error);
@@ -83,7 +83,7 @@ const ClassList = () => {
       const userId = localStorage.getItem("userId");
       const payload = { classbook: classId, user: userId };
       const response = await axios.post(
-        "http://localhost:8082/api/booked-classes/",
+        "https://gymappbackend.onrender.com/api/booked-classes/",
         payload,
         {
           headers: {
@@ -93,7 +93,7 @@ const ClassList = () => {
       );
       console.log(response.data); 
       alert('Class Booked Successfully');
-      const bookedClasses = await axios.get(`http://localhost:8082/api/booked-classes/?user=${userId}`, {
+      const bookedClasses = await axios.get(`https://gymappbackend.onrender.com/api/booked-classes/?user=${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
