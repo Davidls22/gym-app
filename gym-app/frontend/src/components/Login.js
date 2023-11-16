@@ -11,7 +11,7 @@ const Register = () => {
     e.preventDefault();
   
     try {
-      const { data } = await axios.post('http://localhost:8082/api/register', { name, email, password });
+      const { data } = await axios.post('https://gymappbackend.onrender.com/api/register', { name, email, password });
   
       window.alert('User registered successfully!');
       console.log(data);
@@ -43,7 +43,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
   
     try {
-      const { data } = await axios.post('http://localhost:8082/api/login', { email, password });
+      const { data } = await axios.post('https://gymappbackend.onrender.com/api/login', { email, password });
       alert('Log in successful');
       onLogin(false); // Call the onLogin prop with false to set the userType state to 'user'
       console.log(data); // Log the API response to the console
@@ -87,7 +87,7 @@ const AdminLogin = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const { data } = await axios.post('http://localhost:8082/api/login/admin', { email, password });
+      const { data } = await axios.post('https://gymappbackend.onrender.com/api/login/admin', { email, password });
 
       // Display an alert message if the admin login was successful
       if (data.message) {
